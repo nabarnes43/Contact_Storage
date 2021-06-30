@@ -3,5 +3,7 @@
 
     <string name="app_name">Material Design Exercise</string>
     <string name="title_activity_details">DetailsActivity</string>
+    <string name= "UNDO">snackbar_text</string>
+    <string name="snackbar_text">UNDO</string>
 
 </resources>

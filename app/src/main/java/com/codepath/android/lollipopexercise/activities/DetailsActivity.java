@@ -12,6 +12,8 @@ import com.bumptech.glide.Glide;
 import com.codepath.android.lollipopexercise.R;
 import com.codepath.android.lollipopexercise.models.Contact;
 
+import org.parceler.Parcels;
+
 public class DetailsActivity extends AppCompatActivity {
     public static final String EXTRA_CONTACT = "EXTRA_CONTACT";
     private Contact mContact;
@@ -30,8 +32,10 @@ public class DetailsActivity extends AppCompatActivity {
         tvPhone = (TextView) findViewById(R.id.tvPhone);
         vPalette = findViewById(R.id.vPalette);
 
+        mContact = (Contact) Parcels.unwrap(getIntent().getParcelableExtra(DetailsActivity.EXTRA_CONTACT));
+
         // Extract contact from bundle
-        mContact = (Contact)getIntent().getExtras().getSerializable(EXTRA_CONTACT);
+        //mContact = (Contact)getIntent().getExtras().getSerializable(EXTRA_CONTACT);
 
         // Fill views with data
         Glide.with(DetailsActivity.this).load(mContact.getThumbnailDrawable()).centerCrop().into(ivProfile);
