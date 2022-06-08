@@ -8,7 +8,7 @@ Android app to use as the base app for implementing the following material widge
 * Palette (Incorporate dynamic color)
 * Shared Element Activity Transition
 * Floating Action Button
-
+hye
 The app is composed of two screens. The first screen displays a list of contacts, in which, each item is described by the contact's avatar and name. Once a contact is selected from the list, a second screen appears with additional details about the contact, including his contact no. and a floating action button to place a phone call to this contact.
 
 **Contact List**
